@@ -24,7 +24,7 @@ vector<int> push(vector<int> q, int e) {
 
 // pop will take an element off the opposite side in which they are added
 vector<int> pop(vector<int> q) {
-    printf("popped %d\n", q.back());
+    printf("popped %d\n", q.begin());
     q.erase(q.begin()); // erase the element at the begining of q
     return q;
 }
