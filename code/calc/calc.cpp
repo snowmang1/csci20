@@ -1,16 +1,20 @@
 #include "calc.hpp"
 
 int main() {
+    // need a stack b/c stack BASED calculator
     stack<int> st  = {};
 
+    // load the stack CAREFULLY
     st.push(9);
     st.push(9998);
     st.push(5);
     st.push(5);
     st.push(9999);
 
+    // run evaluate to evaluate the stack as an equation
     st = evaluate(st);
 
+    // printing the result
     printf("result: %d\n", st.top());
     return 0;
 }
@@ -29,6 +33,7 @@ stack<int> evaluate (stack<int> st) {
         if (st.empty()) {
             st.push(addition(y,z));
         } else {
+            // reorganize the top of the stack to house the result
             int temp = st.top();
             st.pop();
             st.push(addition(y,z));

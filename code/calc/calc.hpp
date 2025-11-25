@@ -17,6 +17,10 @@ ops:
     subraction = 9998
     multiplication = 9997
     division = 10001
+
+
+function declarations are quality of life
+function declarations being in the header file make my life easier
 */
 
 int main();
