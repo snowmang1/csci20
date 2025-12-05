@@ -1,0 +1,9 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'latex_output/calc_hints.blg'
+[32] biber-darwin:340> INFO - === Thu Nov 20, 2025, 16:49:38
+[39] Biber.pm:420> INFO - Reading 'latex_output/calc_hints.bcf'
+[73] Biber.pm:994> INFO - Found 0 citekeys in bib section 0
+[80] bbl.pm:676> INFO - Writing 'latex_output/calc_hints.bbl' with encoding 'UTF-8'
+[80] bbl.pm:779> INFO - Output to latex_output/calc_hints.bbl
+[80] Biber.pm:131> WARN - The file 'latex_output/calc_hints.bcf' does not contain any citations!
+[80] Biber.pm:133> INFO - WARNINGS: 1

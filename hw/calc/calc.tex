@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+
+\title{Object Calculator}
+\author{
+	Evan M Drake \\
+	\texttt{drakeev@butte.edu}
+}
+
+
+\usepackage{snow-preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\maketitle
+
+	%% body start
+
+	\section{Reverse Polish Notation}
+		\indent Reverse polish notation is a prefix notation style of computation.
+		Of the form $+ 5 2$ is the equivalent expression to $5 + 2$.
+		RPN is formally based on the stack data structure and utilizing its efficiency to add speed to calculation.
+		As the first thing you pop is the operation which will infer the quantity and type of the following data.
+		This time you will be required to have the calculator located in an object.
+		Something like the below:
+
+		\begin{lstlisting}[style=code, language=C++]
+class Calc
+{
+private:
+	stack<int> st;
+	void addition(int, int);
+	void subtraction(int, int);
+public:
+	int evaluate_stack(stack<int>);
+	Calc();
+};
+		\end{lstlisting}
+
+	\section{Your Problem}
+		\indent Use what you know to build an RPN calculator in C++.
+		This calculator will not take user input while running,
+			rather you will fill a stack manually in the program prior to run time.
+		You will build this calculator to infer quantity of inputs and type from the operation given on the first pop.
+		You will only use Natural numbers for now.
+		You will be evaluated (graded) only on how well you infer the quality and type of data coming from the stack.
+		Meaning you should focus on the logic of how a stack works and how that might help you make assumptions.
+
+	\section{Turn ins}
+		It goes without saying but you must turn in both code and an English portion.
+
+	%% body finish
+
+	\nocite{*}
+
+	\newpage % bib
+	\backmatter
+	\addcontentsline{toc}{section}{References}
+	\printbibliography
+
+	\newpage % index
+	\printindex
+
+	\newpage % appendices
+	\appendix
+
+\end{document}
+
