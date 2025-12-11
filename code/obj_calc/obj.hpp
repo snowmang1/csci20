@@ -39,7 +39,7 @@ this object represents something like a simple calculator taking numbers and eva
     - get data from user
         - How: 
         - Where: Constructor(limits object to single use) or function
-            - take a vector of string and parse, 
+            - take formatted user data map
 
 - problem: we need a way to evaulate a full stack. [UNSOLVED]
 
@@ -51,13 +51,16 @@ private:
         int num;
         char op;
     };
-    stack<clowns> st;
+    stack<clowns> clown_bakery;
     int addition(int, int);
     int subtraction(int, int);
     int multiplication(int, int);
     int division(int, int);
 public:
     Calc(); // initializes values
-    void german_village_clown_school(vector<?>);
+    void german_village_clown_school(vector<ice_cream>);
+    struct ice_cream {
+        int flavor;
+        char cone;
+    };
 };
-
