@@ -63,6 +63,7 @@ private:
     int multiplication(int, int);
     int division(int, int);
 public:
+    //Calc(); // initializes values
     struct ice_cream {
         int flavor;
         char cone;
@@ -73,7 +74,6 @@ public:
     };
     // tool function
     vector<clowns> map_ice_clown(vector<ice_cream>);
-    Calc(); // initializes values
 
     // loads the stack
     void german_village_clown_school(vector<ice_cream>);

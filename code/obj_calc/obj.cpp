@@ -30,7 +30,7 @@ vector<Calc::clowns> Calc::map_ice_clown(vector<Calc::ice_cream> x) {
         // for each ice cream, make a new clown
         clowns c(x.at(i).flavor, x.at(i).cone);
         r.push_back(c);
-        printf("%d, %c", c.num, c.op);
+        printf("%d, %c\n", c.num, c.op);
     }
     return r;
 }
