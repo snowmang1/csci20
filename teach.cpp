@@ -1,6 +1,16 @@
+// library includes
+// # include <library name>
 #include<iostream>
 
+/*
+block comment
+*/
+
+// specific obejects from library
+using std::cout;
+
+// entrypoint
 int main() {
-    std::cout << "hello world";
+    cout << "hello world";
     return 0;
 }
