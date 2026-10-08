@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/evandrake/Documents/classes/csci20/output/control_flow'
+relocations:     []
+...
